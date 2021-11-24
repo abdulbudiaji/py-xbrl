@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  py-xbrl:
+    image: "python:3.7.12-bullseye"
+    command: ["/app/py-xbrl/scripts/init.sh"]
+    volumes:
+      - .:/app/py-xbrl
